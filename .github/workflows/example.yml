@@ -9,7 +9,7 @@ jobs:
       - uses: liquibase/liquibase-github-action@v2
         with:
           operation: 'update'
-          classpath: 'example/changelogs'
+          classpath: 'example/changelogs/ojdbc8.jar'
           changeLogFile: 'changelog.oracle.sql'
           username: 'system'
           password: 'oracle'
