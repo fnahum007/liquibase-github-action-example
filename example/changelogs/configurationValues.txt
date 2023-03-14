@@ -1,7 +1,7 @@
 # Set these values in CI/CD configuration to connect to an embedded H2 database and run example
 
 logLevel: info
-changeLogFile: samplechangelog.h2.sql
-url: jdbc:h2:file:./h2tutorial
-username: liquibase
-password: password
+changeLogFile: changelog.oracle.sql
+url: jdbc:oracle:thin:@54.146.60.71:1521/xe
+username: system
+password: oracle
