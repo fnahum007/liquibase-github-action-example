@@ -14,3 +14,4 @@ jobs:
           username: 'system'
           password: 'oracle'
           url: 'jdbc:oracle:thin:@54.146.60.71:1521/xe'
+          liquibaseSchemaName: LIQUIBASE
