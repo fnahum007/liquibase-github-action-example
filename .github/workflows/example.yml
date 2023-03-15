@@ -10,7 +10,7 @@ jobs:
         with:
           operation: 'update'
           classpath: 'example/changelogs/ojdbc8.jar'
-          changeLogFile: 'changelog.oracle.sql'
+          changeLogFile: 'example/changelogs/changelog.oracle.sql'
           username: 'system'
           password: 'oracle'
           url: 'jdbc:oracle:thin:@100.26.138.199:1521/xe'
