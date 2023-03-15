@@ -27,3 +27,10 @@ alter table person_git add country varchar(2)
 --rollback ALTER TABLE person_git DROP COLUMN state;
 alter table person_git add state varchar(2)
 
+--changeset christine:5
+--rollback ALTER TABLE person_git DROP COLUMN country;
+alter table person_git add continent varchar(2)
+
+--changeset amy:6
+--rollback ALTER TABLE person_git DROP COLUMN state;
+alter table person_git add neighborhood varchar(2)
