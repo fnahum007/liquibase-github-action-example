@@ -1,9 +1,9 @@
 --liquibase formatted sql
 
 --changeset amalik:1
---rollback DROP TABLE person-git;
-create table person-git (
-    id int primary key,
+--rollback DROP TABLE person_git;
+create table person_git (
+    id integer primary key,
     name varchar(50) not null,
     address1 varchar(50),
     address2 varchar(50),
@@ -11,9 +11,9 @@ create table person-git (
 )
 
 --changeset amalik:2
---rollback DROP TABLE company-git;
-create table company-git (
-    id int primary key,
+--rollback DROP TABLE company_git;
+create table company_git (
+    id integer primary key,
     name varchar(50) not null,
     address1 varchar(50),
     address2 varchar(50),
@@ -21,10 +21,10 @@ create table company-git (
 )
 
 --changeset christine:3
---rollback ALTER TABLE person-git DROP COLUMN country;
-alter table person-git add country varchar(2)
+--rollback ALTER TABLE person_git DROP COLUMN country;
+alter table person_git add country varchar(2)
 
 --changeset amy:4
---rollback ALTER TABLE person-git DROP COLUMN state;
-alter table person-git add state varchar(2)
+--rollback ALTER TABLE person_git DROP COLUMN state;
+alter table person_git add state varchar(2)
 
